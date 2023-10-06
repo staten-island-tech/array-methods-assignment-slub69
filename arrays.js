@@ -1,25 +1,33 @@
-const characters = [Spongebob, Patrick, Squiqward, Krabs]
-const Spongebob = {
-    fname: 'Spongebob',
-    lname: 'Squarepants',
-    age: 18,
-    parents: ['Harold Squarepants', 'Margret Squarepants']
-}
-const Patrick = {
+console.log("Test")
+const characters = [
+    Spongebob = {
+        fname: 'Spongebob',
+        lname: 'Squarepants',
+        age: 18,
+        parents: ['Harold Squarepants', 'Margret Squarepants']
+},
+ Patrick = {
     fname: 'Patrick',
     lname: 'Star',
     age: 37,
     parents: ['Herb Star', 'Margie Star']
-}
-const Squiqward = {
+},
+ Squiqward = {
     fname: 'Squidward',
     lname: 'Tentacles',
     age: 30,
     parents: ['Jeff Tentacles', 'Mrs. Tentacles']
-}
-const Krabs = {
+},
+ Krabs = {
     fname: 'Eugene',
     lname: 'Krabs',
     age: 18,
-    parents: ['Harold Squarepants', 'Margret Squarepants']
-}
+    parents: ['Krabs Senior', 'Betsy Krabs']
+}]
+characters.forEach((name)=>
+    console.log(name.fname)
+)
+const young = characters.filter((old)=>
+    old.age < 21
+)
+console.log(young);
