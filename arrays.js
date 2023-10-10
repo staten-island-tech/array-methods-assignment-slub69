@@ -1,4 +1,4 @@
-console.log("Test")
+console.log("Connected")
 const characters = [
     Spongebob = {
         fname: 'Spongebob',
