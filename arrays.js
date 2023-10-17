@@ -25,8 +25,7 @@ const characters = [
     parents: ['Krabs Senior', 'Betsy Krabs']
 }]
 characters.forEach((name) => {
-    console.log(name.fname)
-    console.log(name.lname)
+    console.log(name.fname + ' ' + name.lname)
     name.parents.forEach((parent) => {
         console.log('Parents are ' + parent)
     })
