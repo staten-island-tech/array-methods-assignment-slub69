@@ -1,4 +1,4 @@
-console.log("Connected")
+console.log("Connected...\n\n\n")
 const characters = [
     Spongebob = {
         fname: 'Spongebob',
@@ -24,8 +24,18 @@ const characters = [
     age: 17,
     parents: ['Krabs Senior', 'Betsy Krabs']
 }]
-characters.forEach((name)=>console.log(name.fname))
-characters.forEach((parent)=>console.log(parent.fname + '\'s dad is ' + parent.parents[0] + '.'))
-characters.forEach((parent)=>console.log(parent.fname + '\'s mom is ' + parent.parents[1] + '.'))
+characters.forEach((name) => {
+    console.log(name.fname)
+    console.log(name.lname)
+    name.parents.forEach((parent) => {
+        console.log('Parents are ' + parent)
+    })
+    console.log('\n')
+});
+
+
+/* characters.forEach((parent)=>check_parents())
+check_parents(){
+    parent.forEach(m_f)=>console.log(parent.fname + ' and ' + parent.lname + ' are ')}
 const young = characters.filter((old)=>old.age < 18)
-young.forEach((young_name)=>console.log(young_name.fname + ' is a minor.'))
+young.forEach((young_name)=>console.log(young_name.fname + ' is a minor.')) */
